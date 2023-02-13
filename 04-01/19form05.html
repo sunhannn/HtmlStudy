@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form 요소</title>
+  </head>
+  <body>
+    <h2>the detailist element</h2>
+    <p>
+      datalist 엘리먼트는 입력양식 옵션을 미리 정의하여 보여주는 태그입니다.
+    </p>
+    <form action="19form05.html">
+      <input list="browsers" name"browser">
+      <datalist id="browser">
+        <option>Internet Explore</option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+      </datalist>
+      <input type="submit" />
+    </form>
+    <p>
+      <b>참고 : </b> datalist 태그는 safari 12.1. 이전 버전에서는 지원이 되지
+      않습니다.
+    </p>
+  </body>
+</html>

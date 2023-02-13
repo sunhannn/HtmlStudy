@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        border: 1px solid #000000;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <!-- selected, size 속성 -->
+      <label for="fruits">Choose a fruit : </label>
+      <select name="fruits" id="fruits" size="3">
+        <option>Apple</option>
+        <option value="Water Melon">멜론</option>
+        <option value="Orange" selected>오렌지</option>
+        <option value="lemon">레몬</option></select
+      ><br /><br />
+
+      <!-- multiple 속성 -->
+      <label for="colors">Choose a colors</label>
+      <select name="colors" id="colors" size="4" multiple>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option></select
+      ><br /><br />
+      <!-- optgroup 요소 -->
+      <label for="cars">Choose a car</label>
+      <select name="cars" id="cars">
+        <optgroup label="Swdish Cars"></option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars"></option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+            </optgroup>
+        
+        
+        </select
+      ><br /><br />
+
+      <input type="submit" value="전송">
+    </form>
+
+  </body>
+</html>

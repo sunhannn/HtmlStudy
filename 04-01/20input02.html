@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input element</title>
+  </head>
+  <body>
+    <h2>input elements</h2>
+    <form action="20input02.html" method="GET" autocomplete="off">
+      <!-- readonly 오직 읽기만 가능하다. 이전에는 readonly = "true"로 표현된 속성임. -->
+      <label for="userid">userId : </label><br />
+      <input
+        type="text"
+        id="useId"
+        name="userId"
+        value="hydong"
+        readonly
+      /><br />
+      <label for="password">Password</label><br />
+      <input
+        type="password"
+        id="pwd"
+        name="pwd"
+        value="12345678"
+        minlength="4"
+        maxlength="8"
+      />
+      <br />
+      <!-- disabled 비활성화 기능. 브라우저상에서 보임. 서버로 값이 전송되지 않음. maxlength 입력할 수 
+        있는 최대 문자열 길이를 제한. -->
+      <label for="username">Username</label><br />
+      <input type="text" name="username" id="username" maxlength="3" /><br />
+      <label for="job">job : </label>
+      <input type="text" name="job" id="job" value="학생" disabled /><br />
+      <!-- input type="color" 속성은 색상을 포함해야 하는 입력 필드에 사용된다.
+    Tip: type="color" 속성은 인터넷 익스플로러 11, 사파리 9.1이전 버전에서는 지원안함 -->
+      <label for="likecolor">Select your favorite color: </label>
+      <input type="color" name="likecolor" id="likecolor" /><br />
+      <!-- hidden 브라우저상에서 안 보임. 서버로 값이 전송됨 -->
+      <label for="hinput"> hinput tag :</label>
+      <input type="hidden" name="hinput" id="hinput" value="숨긴 값" /><br />
+      <!-- size 문자 입력창이 보여지는 너비를 사이즈로 표현함. -->
+      <label for="etcInfo">그외 정보 : </label>
+      <input type="text" name="etcInfo" id="etcInfo" size="10" /><br /><br />
+      <input type="submit" value="가입하기" />
+      <input type="reset" /><br /><br />
+    </form>
+  </body>
+</html>

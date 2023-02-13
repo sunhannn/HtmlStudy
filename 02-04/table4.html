@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>table Element</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        padding: 5px;
+        /* 움직일 수 있는 영역안에 들어있는 인라인 요소들을 수평정렬 시키는 속성 */
+        text-align: right;
+      }
+      th {
+        background-color: gray;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>that spans two cloumns</h2>
+    <p>To make a cell span mroe than one column, use the colspan attribute.</p>
+    <p style="text-align: right; width: 100%"><span>테스트 텍스트</span></p>
+
+    <table style="width: 100%">
+      <!-- <table> -->
+      <tr>
+        <th>Name</th>
+        <th colspan="2">Telephone</th>
+      </tr>
+      <tr>
+        <td>Bill Gates</td>
+        <td>55577854</td>
+        <td>55577855</td>
+      </tr>
+    </table>
+  </body>
+</html>

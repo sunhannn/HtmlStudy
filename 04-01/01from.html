@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html5 폼</title>
+  </head>
+  <body>
+    <!-- <!-- <form action = " ../03-01/11atribute.html" method="post"> -->
+    <!-- action 속성 : 데이터를 전송하려는 경로를 기술
+					값을 기술하지 않으면 기본값은 나의 페이지로 전송함.
+             method 속성 : 데이터를 전송하는 방식
+					값을 기술하지 않으면 기본 값은 get방식임.
+            -post : 데이터를 body에 숨겨서 보내는 방식
+                    많은 양의 데이터를 보내거나 보안적으로 중요한 데이터를 전송할 때 사용
+            -get : 적은 양의 데이터를 url의 뒤에 쿼리스트링(queryString)방식으로
+                    보낼 때 사용. 데이터의 전송길이가 2048자 정도로 정해져 있어,
+                이미지와 같은 많은 데이터를 전송하기에는 적합하지 않으며,
+            url에 데이터가 그대로 나타나기 때문에 보안상 결함이 있다.
+            - 쿼리스트링(queryString)방식 : url뒤에 ?를 붙이고 그 뒤에 데이터를 key와 value으로 전송하는 방식을 말함.
+			-target : 열리는 창을 지정. 기본값은 _self임
+			-autocomlete : 데이터를 입력한 이력이 있으면 도움말처럼 뜨는 것을 말함.
+							기본 값은 on임 -->
+    <form>
+      <!-- name 속성 : 데이터베이스와 통신하기 위해 필요한 속성
+                        되도록 자바빈객체의 속성명과 일치시켜 준다. -->
+      <input type="text" name="searchkey" title="검색" />
+      <!-- type ="submit" 속성은 클릭하는 순간 form태그의  action을 실행시킨다.
+                    onclick이벤트가 숨겨져 있다. -->
+      <input type="submit value="검색">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form 요소</title>
+    <style>
+      form {
+        border: 1px solid #000000;
+        padding: 5px;
+      }
+      button {
+        background-color: #00e1ff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Textarea</h2>
+    <p>The textarea element defines a multi-line input field.</p>
+    <form action="19form03.html" method="GET">
+      <textarea
+        name="message"
+        cols="30"
+        rows="3"
+        placeholder="글을 입력하세요."
+      ></textarea>
+      <textarea name="mbox" style="width: 500px; height: 300px">
+The cat was playing in the garden.</textarea
+      ><br />
+      <input type="submit" />
+    </form>
+    <br />
+    <button type="button" onclick="alert('안녕하세요.')">클릭하세요.</button>
+    <button onclick="alert('클릭버튼!')">클릭</button>
+  </body>
+</html>

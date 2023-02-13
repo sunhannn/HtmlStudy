@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>input elements</h2>
+    <form action="../img/cute_dog.jpg">
+      <!-- required 필수 입력 송성. 예전에는 required = "required"로 표현 됨.
+checked 미리 선색을 해놓는 속성. radio, checkbox 엘리먼트에 사용. -->
+      <input type="radio" name="male" id="gender" value="male" required />
+      <label for="male">Male</label><br />
+
+      <input type="radio" name="female" id="gender" value="female" required />
+      <label for="female">Female</label><br />
+      <input type="radio" name="other" id="gender" value="other" required />
+      <label for="other">Ohter</label><br /><br />
+
+      <label
+        ><input type="radio" name="colors" id="red" value="red" />Red</label
+      >
+      <label
+        ><input
+          type="radio"
+          name="colors"
+          id="green"
+          value="green"
+        />Green</label
+      >
+      <label
+        ><input type="radio" name="colors" id="blue" value="blue" />Blue</label
+      ><br /><br />
+
+      <input type="checkbox" id="fruit1" name="fruit" value="Apple" required />
+      <label for="fruit1">I have a Apple</label><br />
+
+      <input type="checkbox" id="fruit2" name="fruit" value="Orange" required />
+      <label for="fruit2">I have a Orange</label><br />
+
+      <input type="checkbox" id="fruit3" name="fruit" value="Lemon" required />
+      <label for="fruit3">I have a Lemon</label><br />
+
+      <input
+        type="checkbox"
+        id="vehicle1"
+        name="vehicle1"
+        value="Bike"
+        required
+      />
+      <label for="vehicle1">I have a Bike</label><br />
+
+      <input
+        type="checkbox"
+        id="vehicle2"
+        name="vehicle2"
+        value="Car"
+        required
+      />
+      <label for="vehicle2">I have a Car</label><br />
+
+      <input
+        type="checkbox"
+        id="vehicle3"
+        name="vehicle3"
+        value="Boat"
+        required
+      />
+      <label for="vehicle3">I have a Boat</label><br />
+
+      <!-- input type="image" : submit버튼과 동일한 역할. 버튼을 이미지로 설정 가능.
+불필요한 마우스의 클릭 지점의 x,y축 좌표값을 같이 붙여 보낸다. -->
+      <!-- input요소에서 width,height의 독립속성은 image 유형에서만 가능하다. -->
+      아래의 이미지를 클릭해보세요~<br />
+      <input
+        type="image"
+        src="submit.png"
+        style="border-radius: 5px"
+        alt="제출버튼"
+        title="submit버튼을 이미지로"
+      />
+    </form>
+  </body>
+</html>
