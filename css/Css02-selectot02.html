@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>조합 선택자</title>
+    <style>
+      div {
+        border: 1px solid #000000;
+        padding: 10px;
+      }
+      /* 하위 선택자 */
+      div p {
+        background-color: yellow;
+      }
+      /* 자식 선택자 */
+      div > span {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>조합 선택자(Combinator selector)</h2>
+    둘 이상의 단순 선택자를 포함 할 수 있다. <br />
+    단순 선택자 사이에 결합자(+)를 포함 할 수 있다. <br />
+
+    <div>
+      <p>Paragraph 1 in the div.</p>
+      <p>Paragraph 2 in the div.</p>
+      <section><p>Pragraph 3 in the div.</p></section>
+    </div>
+
+    <div>
+      <span>Paragraph 1 in the div.</span>
+      <span>Paragraph 2 in the div.</span>
+      <section><span>Pragraph 3 in the div.</span></section>
+    </div>
+
+    <p>Pragraph4. Not in a div.</p>
+    <p>Pragraph5. Not in a div.</p>
+    <br /><br />
+  </body>
+</html>
