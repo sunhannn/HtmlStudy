@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      가상클래스(:) 선택자-상태 의사 클래스(UI element states psuedo-calss)
+    </title>
+    <style>
+      /* p{
+            color: #000000;
+        }
+
+        *{
+            color: #000;
+        }
+ */
+      /* p엘리먼트가 아닌 모든 요소들의 글자 색상 */
+      :not(p),
+      :not(body),
+      :not(html) {
+        color: #ff0000;
+      }
+    </style>
+  </head>
+  <body>
+    <p>This is a paragragph</p>
+    <p>This is another paragragh</p>
+    <h1>This is a heading</h1>
+    <div>This is some text in a div element.</div>
+    <a href="https://www.naver.com" target="_blank">Link to Naver!</a>
+  </body>
+</html>

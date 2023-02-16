@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      가상클래스(:) 선택자-상태 의사 클래스(UI element states psuedo-calss)
+    </title>
+
+    <style>
+      /* 체크된 input요소를 선택 */
+      input:checked {
+        height: 50px;
+        width: 50px;
+      }
+      /* input 요소에서 disabled(비활성화) 속성을 가진 요소 */
+      input:disabled {
+        background: #dddddd;
+      }
+      /* input 요소에서 disabled(비활성화) 속성이 없는 요소 */
+      input:enabled {
+        background: #ffff00;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      First name : <input type="text" value="Mickey" /><br />
+      Last name : <input type="text" value="Mouse" /><br />
+      Country :
+      <input type="text" value="Disneyland" disabled /><br /><br /><br />
+      <input type="radio" value="male" name="gender" />Male <br />
+      <input type="radio" value="female" name="gender" />Female <br />
+      <input type="checkbox" value="Bike" />I have a bike <br />
+      <input type="checkbox" value="Car" />I have a car <br /><br />
+      <input type="submit" /> <input type="reset" />
+    </form>
+  </body>
+</html>

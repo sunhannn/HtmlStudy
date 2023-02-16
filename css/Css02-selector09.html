@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      가상클래스(:) 선택자-상태 의사 클래스(UI element states psuedo-calss)
+    </title>
+    <style>
+      /* 링크의 타겟이 되는 엘리먼트 요소를 선택 */
+      a:target {
+        border: 2px solid #d4d4d4;
+        background-color: #e5eecc;
+      }
+      /* 가르키는 대상이 없을 때 자신을 대상 target */
+      p:target {
+        border: 2px solid #d4d4d4;
+        background-color: #e5eecc;
+      }
+      .no {
+        background-color: #e9e9e9;
+        float: left;
+        padding: 20px;
+        margin: 5px;
+      }
+      .no:target {
+        color: #f63;
+      }
+      nav {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is a heading</h1>
+    <a href="#news1"><p>Jump to new content 1</p></a>
+    <p><a href="#news2">Jump to New content 2</a></p>
+
+    <p>
+      Click on the links above and the :target selector highlight ther current
+      active HTML anchor
+    </p>
+
+    <!-- <a id="news1">책갈피 news1</a><br> -->
+    <!-- <a id="news2">책갈피 news2</a><br> -->
+    <!-- <a id="news1">책갈피 news1</a><br> -->
+    <!-- <a id="news2">책갈피 news2</a><br> -->
+
+    <p id="news1"><b>New content1 ...</b></p>
+    <p id="news2"><b>New content2 ...</b></p>
+    <!-- <p id="news1"><b>New content1 ...</b></p>
+<p id="news2"><b>New content2 ...</b></p> -->
+
+    <div id="no1" , class="no">div 01</div>
+    <nav></nav>
+    <div id="no2" , class="no">div 02</div>
+    <div id="no3" , class="no">div 03</div>
+    <a href="#no1"><button>1</button></a>
+    <a href="#no2"><button>2</button></a>
+    <a href="#no3"><button>3</button></a>
+  </body>
+</html>
