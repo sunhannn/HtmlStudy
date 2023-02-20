@@ -1,0 +1,29 @@
+/* Css_d_font01.html관련 CSS */
+
+h1#a{
+    font-family: "Audiowide", sans-serif;
+}
+h1#b{
+    font-family: "Sofia";, sans-serif;
+}
+h1#c{
+    font-family: "Trirong";, serif;
+}
+.ft{
+    font-family: Copperplate, Papyrus, fantasy;
+}
+/* @font-face 글꼴을 정의하는 시스템코드@font-face  
+서체는 저작권이 있으므로, 무료 서체가 아닌 것을 사용할 경우 문제가 발생할 수 있다. 
+따라서 웹페이지 제작시 꼼꼼이 확인해보고 사용할 것.
+무료 한글 폰트 참고: https://brunch.co.kr/@jade/203
+구글 무료 폰트 참고:  https://developers.google.com/fonts/docs/getting_started#specifying_font_families_and_styles_in_a_stylesheet_url
+*/
+@font-face{
+    font-family: makeFont;/* 폰트명 선언하기*/
+    /* src : url("../font/HMKMAMI.TTF") */
+    /* src : url("../font/HMFMPYUM.TTF") */    
+    src: url("../font/H2GTRM.TTF");
+}
+div#ff{
+    font-family: makeFont; font-weight: bolder;
+}
