@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>변수 선언 및 사용</title>
+    <script>
+      /*
+        alert("자바스크립트의 \n줄바꿈입니다.")
+        var 예약어 사용
+
+        underfined은 변수를 선언하고 값을 할당하지 않은 상태.
+        null은 변수를 선언하고 빈 값을 할당한 상태(빈 객체)이다.
+        즉, underfined는 자료형이 없는 상태이다.
+
+        호이스팅 : 미리 선언되어 있지 않아도, 아래에 선언된 부분이 있으면
+                    선언 키워드(예약어)를 끌어 올려 적용해주는 방식
+        */
+      box;
+      document.write(box, "<br>"); //undefined와 한줄
+
+      var box = ""; //var 사용하면 재선언 가능
+      document.write(box, "<br>");
+
+      var box = null;
+      document.write(box, "<br>");
+
+      var box = 30;
+      document.write(box, "<br>");
+
+      var box = "재선언 가능"; // "", '' 둘다 사용가능
+      document.write(box + "<br>");
+
+      //   a=true;
+      // document.write(a, "<br>");
+      // let 예약어 사용
+      let a = true; // let : 지역변수, 호이스팅 불가능, 재선언 불가능
+
+      document.write(a, "<br>");
+
+      // let a = "재선언 불가";
+      a = "재할당 가능";
+      document.write(a, "<br>");
+      // const 예약어 사용
+      // 선언만 하는 것은 불가
+      // const b; const도 지역변수
+      const b = "상수";
+      //   const b = "재선언 불가";
+      //  b = "재할당 불가";
+      document.write(b, "<br>");
+    </script>
+  </head>
+  <body></body>
+</html>

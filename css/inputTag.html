@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .subm {
+        display: block;
+        background-color: #fff;
+        border: 1px solid #dedede;
+        cursor: pointer;
+        padding: 5px 10px 6px 7px;
+      }
+      .subm img {
+        border: 0;
+        padding: 0;
+        width: 16px;
+        height: 16px;
+      }
+      .subm:hover {
+        background-color: #969793;
+        border: 1px solid #c6d880;
+        color: #529215;
+      }
+      .subm:active {
+        background-color: #ff0000;
+        border: 1px solid f8b89b;
+        color: #ffffff;
+      }
+
+      #make_sbtn {
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: rgb(71, 182, 226);
+        border: none;
+        color: white;
+        font-size: 17px;
+        letter-spacing: 2px;
+        font-weight: bolder;
+      }
+
+      input[type="image"] {
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        vertical-align: bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>input field types</h2>
+    <!-- <form action="20inputTag.html" method="POST" enctype="multipart/form-data"></form> -->
+
+    <form>
+      <input type="text" name="standard" id="기본 텍스트 값 입력" /><br />
+      <input type="search" name="in1" id="검색" /><br />
+      <input type="password" name="in2" /><br />
+      <input type="email" name="in3" id="이메일 주소 입력" /><br />
+      <input type="tel" name="in4" id="전화번호 입력" /><br />
+      <input type="url" name="in5" id="url 입력" /><br />
+
+      <label><input type="checkbox" />다중 선택</label>
+      <label><input type="radio" />단일 선택</label>
+
+      <input type="color" value="red" /><br />
+      <input type="file" name="in6" /><br />
+      <!-- file전송을 할 때 폼에 메소드 POST로 해야함!-->
+      <!-- <input type="file" name="in6" multiple><br> -->
+      <input type="hidden" value="숨김타입" name="in7" /> <br />
+
+      <input type="number" name="in8" placeholder="숫자입력" /> <br />
+      <input type="range" name="in9" />범위 <br />
+      <input type="date" name="in10" /> <br />
+      <input type="time" name="in11" /><br />
+      <input type="datetime-local" name="in12" /> <br />
+      <input type="week" name="in13" /> <br />
+      <input type="month" name="in14" /> <br />
+
+      <button type="button" onclick="alert('일반버튼입니다.')">일반버튼</button>
+      <button type="submit" class="subm">
+        <img src="../img/cute_dog.jpg" alt="" />전송하기
+      </button>
+
+      <input
+        type="image"
+        src="../img/submit.png"
+        alt="제출버튼"
+        title="submit 버튼을 이미지로"
+      />&nbsp; <input type="submit" id="make_sbtn" value="submit" />&nbsp;
+      <input type="reset" value="reset" />&nbsp;
+      <input type="button" value="button" />&nbsp;
+    </form>
+    <br /><br />
+  </body>
+</html>

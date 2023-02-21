@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>변수 선언 및 사용</title>
+  </head>
+  <body>
+    <h2>변수 선언 및 사용</h2>
+    <p>let 키워드는 지역의 의미가 있다.</p>
+    <p id="demo" style="border: 1px solid #000"></p>
+    <script>
+      let x = 10;
+      document.write("전역x1 : " + x + "<br>");
+      {
+        let x = 2;
+        document.write("지역x : " + x + "<br>");
+      }
+      document.getElementById("demo").innerHTML = x;
+      document.write("전역x2 : " + x + "<br>");
+    </script>
+  </body>
+</html>

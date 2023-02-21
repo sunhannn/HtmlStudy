@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var a = 10;
+      var b = 20;
+      var c = 10;
+      var f = "20";
+      var result;
+
+      result = a > b;
+      document.write(
+        "a : " + a + ", b : " + b + ", " + c + ", f: " + f + "<br>"
+      );
+      result = a > b;
+      document.write("a > b : " + result + "<br>");
+      result = a < b;
+      document.write("a < b : " + result, "<br>");
+      result = a <= b;
+      /*
+      동치 연산자
+      일반 동치연산자 (==) : 비슷하게 일치하는 값이면 자료형이 달라도 일치로 인식
+      완전 동치연산자 (===) : 자료형까지 완전하게 일치해야만 일치로 인식
+      
+      */
+      document.write("a <= b : " + result, "<br>");
+      result = b == f;
+      document.write("b == f : " + result, "<br>");
+      result = a != b;
+      document.write("a != b : " + result, "<br>");
+    </script>
+  </head>
+  <body></body>
+</html>
