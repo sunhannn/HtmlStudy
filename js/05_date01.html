@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #demo,
+      #demo2 {
+        color: red;
+      }
+    </style>
+    <script>
+      function spDate() {
+        var d = new Date("1980-09-05T05:30");
+        // var d = new Date(1980,3,5,18,30);
+        var mon =
+          d.getMonth() + 1 > 9 ? d.getMonth() + 1 : "0" + (d.getMonth() + 1);
+        // var mon = d.getMonth()>9 ? d.getMonth() : "0" + (d.getMonth());
+        var dd = d.geteDate() > 9 ? d.getDate() : "0" + d.getDate();
+        var t = d.getHours() > 9 ? d.getHours() : "0" + d.getHours(); //24시간
+        var min = d.getMinutes() > 9 ? d.getMinutes() : "0" + d.geteMinutes();
+        var w = d.getDay();
+        var week = [
+          "일요일",
+          "월요일",
+          "화요일",
+          "수요일",
+          "목요일",
+          "금요일",
+          "토요일",
+        ];
+
+        var n =
+          d.getFullYear() +
+          "년" +
+          mon +
+          "월" +
+          dd +
+          "일 " +
+          t +
+          ":" +
+          min +
+          " " +
+          week[w];
+        document.getElementById("demo2").innerHTML = n;
+      }
+    </script>
+  </head>
+  <body>
+    <!--
+        Date() : 날짜를 가져오는 생성자, 자신의 시스템의 설정 시간으로 가져옴.
+        형식 : 
+        //오늘 날자 가져옴.
+        var d = new Date();
+        //설정한 날자를 가져옴.
+        var d = new Date(millisecond);
+        var d = new Date(dateString);
+        var d = new Date(year, month, day, hours, minutes, second, milliseconds);
+        
+        -->
+
+    <h2>Date의 get() 함수</h2>
+    <span
+      onclick="document.getElementById('demo').innerHTML=Date()"
+      style="color: blue; cursor: pointer"
+    >
+      지금 시간은?
+    </span>
+    <span id="demo"></span> <br />
+    <span onclick="spDate()" style="color: blue; cursor: pointer">
+      설정한 시간은?
+    </span>
+    <span id="demo2"></span> <br />
+  </body>
+</html>

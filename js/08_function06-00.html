@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <title>function06-00</title>
+</head>
+
+<body>
+  <h2>arguments객체</h2>
+  <p>자바스크립트 함수의 내장객체이며, 매개변수의 정보를 가지고 있다.</p>
+  <p id="demo"></p>
+  <p id="demo2"></p>
+  <script>
+    function myFunction(a, b) {
+      //arguments=[4,3]
+      return (
+        "0번째 매개변수의 값은 " +
+        arguments[0] +
+        "이며, 총 매개변수의 개수는 " +
+        arguments.length +
+        "개 이다."
+      );
+    }
+    document.getElementById("demo").innerHTML = myFunction(4, 3);
+
+    function findMax() {
+      // arguments=[4,5,6]
+      let max = -Infinity;
+      for (let i = 0; i < arguments.length; i++) {
+        console.log(arguments[i]);
+        if (arguments[i] > max) {
+          max = arguments[i];
+        }
+      }
+      return max;
+    }
+    document.getElementById("demo2").innerHTML = findMax(4, 5, 6);
+  </script>
+</body>
+
+</html>

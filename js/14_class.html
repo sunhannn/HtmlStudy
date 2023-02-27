@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>class</title>
+</head>
+<body>
+    <script>
+        class Person {
+            name = '고라니'; age = 25; city = '강원도';
+            // constructor(name,age,city){
+            // this.name=name;this.age=age;this.city=city;
+            // }
+            constructor() {
+                if (arguments.length >= 1 && arguments.length <= 3) {
+                    if (arguments[0] != undefined) this.name = arguments[0];
+                    if (arguments[1] != undefined) this.age = arguments[1];
+                    if (arguments[2] != undefined) this.city = arguments[2];
+                }
+            }
+            setName(name) {
+                this.name = name;
+            }
+            getName() {
+                return this.name;
+            }
+        }
+        let kim = new Person('김가네', 80, '서울');
+        console.log(kim);
+        document.write(kim.getName(), '<br>');
+
+        let co = new Person();
+        console.log(co);
+
+        let etc = new Person('둘리', 100);
+        document.write(etc.getName(), '<br>');
+        console.log(etc);
+        etc.setName('홍길동');
+        document.write(etc.getName());
+        console.log(etc);
+    </script>
+</body>
+</html>

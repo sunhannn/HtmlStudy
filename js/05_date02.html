@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      function spDate() {
+        let a = Date.now();
+        var d = new Date();
+        d.setFullYear(2020);
+        d.setMonth(9);
+        d.setDate(1);
+        // 삼항식 : 조건 ?  true값 : false 값;
+        var mon =
+          d.getMonth() + 1 > 9 ? d.getMonth() + 1 : "0" + (d.getMonth() + 1);
+        var dd = d.geteDate() > 9 ? d.getDate() : "0" + d.getDate();
+        var t = d.getHours() > 9 ? d.getHours() : "0" + d.getHours(); //24시간
+        var min = d.getMinutes() > 9 ? d.getMinutes() : "0" + d.geteMinutes();
+        var w = d.getDay();
+        var week = [
+          "일요일",
+          "월요일",
+          "화요일",
+          "수요일",
+          "목요일",
+          "금요일",
+          "토요일",
+        ];
+
+        var n =
+          d.getFullYear() +
+          "년" +
+          mon +
+          "월" +
+          dd +
+          "일 " +
+          t +
+          ":" +
+          min +
+          " " +
+          week[w];
+        document.getElementById("demo").innerHTML = n;
+        let b = Date.now();
+        alert("걸린시간 : " + (b - a));
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Date의 set() 함수</h2>
+    <span onclick="spDate()" style="color: blue; cursor: pointer">
+      설정한 시간은?
+    </span>
+    <span id="demo"></span> <br />
+  </body>
+</html>

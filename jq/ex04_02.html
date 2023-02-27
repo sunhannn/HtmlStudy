@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        /*
+        prob("속성명") : JavaScript의 프로퍼티(property)를 핸들링 함.
+        prob("속성명") : 프로퍼티는 JavaScript에서 사용하는 속성 정보를 가져오므로
+        html의 정보와 일치하기도 하고 일치하지 않을 수 있다.
+        prob("속성명", "속성값") : 해당 요소의 속성 정보를 속성값으로 설정(변경)한다.
+        
+        
+        
+        
+        */
+        function bFnc() {
+            var $goLink = $('#link');
+            // $goLink => <a href='#none' class="link">버튼
+            var $goLink = $('.link');
+            // $goLink => <a href='#none' class="link">버튼2</a>
+            console.log($goLink.attr('href'));
+            console.log($goLink.prop('href'));
+            var $goLink = $('#amove');
+            // $goLink => <a href='#none' id="amove">버튼2</a>
+            $goLink.attr('href', "http://www.google.com");
+            var $goLink = $('.amove');
+            // $goLink => <a href='http://www.naver.com' id="amove">버튼2</a>
+            $goLink.attr('href', "#none");
+
+
+
+        }
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <p>
+        <a href="#none" id="link">버튼1</a>
+        <a href="https://www.naver.com" id="link">버튼2</a>
+        <a href="#none" id="link">이동1</a>
+        <a href="https://www.naver.com" id="amove">이동2</a>
+
+
+    </p>
+
+</body>
+
+</html>

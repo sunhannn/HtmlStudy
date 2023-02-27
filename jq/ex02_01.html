@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>선택자(selector)</title>
+    <style type="text/css">
+        .spotlight {
+            background-color: #ff0;
+        }
+
+        .redtext {
+            color: rgb(207, 113, 113);
+        }
+
+        .largetext {
+            font-size: 30pt;
+        }
+
+        .italictext {
+            font-style: italic;
+        }
+    </style>
+    <script src="../jq/js/jquery.js"></script>
+    <script>
+        function startFnc() {
+            $("span").addClass('redtext');
+            $('div').addClass('spotlight');
+            $('#simpletext1').addClass('largetext');
+            $('.simpletext1').addClass('italictext');
+            $('#fbtn').hide();
+            $('#ebtn').show();
+        }
+
+        function endFnc() {
+            $("span").removeClass('redtext');
+            $('div').removeClass('spotlight');
+            $('#simpletext1').removeClass('largetext');
+            $('.simpletext1').removeClass('italictext');
+            $('#fbtn').show();
+            $('#ebtn').hide();
+        }
+
+        $(document).ready(function () {
+            $('#ebtn').hide();
+        });
+
+    </script>
+</head>
+
+<body>
+    <span id="simpletext1">simple</span>
+    <div class="simpletext1">jQuery</div>
+    <span id="simpletext2">basic</span>
+    <div id="simpletext3">example</div>
+    <button id="fbtn" onclick="startFnc()">제이쿼리 적용하기</button>
+    <button id="ebtn" onclick="endFnc()">제이쿼리 제거하기</button>
+</body>
+
+</html>

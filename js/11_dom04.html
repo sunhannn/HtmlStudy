@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>dom04</title>
+    <script>
+        window.onload = function () {
+            var pic = document.createElement('img'); //<img>
+            pic.setAttribute('src', '../img/history.png');
+            // <img src="../img/history.png">
+            document.body.getElementsByTagName("p")[0].appendChild(pic);
+            // document.body.appendChild(pic);
+        };
+    </script>
+</head>
+
+<body>
+    <p>Hello DOM<br><br></p>
+    <p>Document Object Model</p>
+</body>
+
+</html>

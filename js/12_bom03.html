@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>Timer</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <button onclick="clearInterval(myVar)">Stop time</button>
+
+    <script>
+        // 1초마다 myTimer 함수 실행
+        var myVar = setInterval(myTimer, 1000);
+        function myTimer() {
+            var d = new Date();
+            // toLocaleTimeString():현재 시간을 가져오는 함수. 시스템 내장 시간을 가져옴
+            document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+        }
+    </script>
+</body>
+
+</html>

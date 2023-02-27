@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var data = prompt("숫자 5개 입력(,로 구분)", "0");
+      //입력 예시 : 99, 88, 77
+      var arr = data.split(",");
+      var max = arr[0];
+      var min = arr[0];
+      console.log("min : " + min + ", max" + max);
+      for (var i = 0; i < 5; i++) {
+        console.log("arr[" + i + "]요소" + arr[i]);
+        if (parseInt(max) < parseInt(arr[i])) max = arr[i];
+        // alert("max[" + i + "]" + max + "arr [" + i + "]" + arr[i]);
+        if (parseInt(min) > parseInt(arr[i])) min = arr[i];
+        //parseInt 문자제거 숫자로 바꿈(숫자는 무조건 앞으로)
+      }
+
+      document.write("최대값 : " + max + ", 최소값 : " + min);
+    </script>
+  </head>
+  <body></body>
+</html>

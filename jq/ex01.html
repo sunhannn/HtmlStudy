@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>실행 순서</title>
+
+    <script src="../jq/js/jquery.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            alert("$(document).ready ALERT 경고창");
+        });
+
+        window.onload = function () {
+            alert("window.onload ALERT 경고창");
+        }
+
+        $(function () {
+            alert("$(function() ALERT 경고창");
+        });
+    </script>
+</head>
+
+<body>
+본문내 알림 글자를 띄웁니다.
+</body>
+
+</html>

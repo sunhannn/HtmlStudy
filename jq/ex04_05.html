@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <style>
+        ul {
+            float: left;
+            margin: 30px;
+        }
+    </style>
+    <script>
+        $(function () {
+            $('a').click(function () {
+                $("img").attr("src", $(this).attr("href"));
+                return false;
+
+            })
+
+
+
+
+        })
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <ul>
+
+        <li><a href="img/cute_dog.jpg">사진1</a></li>
+        <li><a href="img/img_girl.jpg">사진2</a></li>
+
+
+    </ul>
+
+    <img>
+
+</body>
+
+</html>

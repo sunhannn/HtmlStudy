@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>dom03</title>
+
+    <!-- <style>
+        #p1{
+            color:blue;
+            font-family: "Broadway";
+            font-size:25pt;
+        }
+        .div{
+            width:200px;height:270px;margin-left:50px;padding:20px;
+            text-align:center;border:1px solid#000;
+        }
+    </style> -->
+</head>
+
+<body>
+    <p>Hello World</p>
+    <hr>
+    <p id="p1">Hello World</p>
+    <hr>
+    <script>
+        document.getElementById("p1").style.color = "blue";
+        document.getElementById("p1").style.fontFamily = "Broadway";
+        document.getElementById("p1").style.fontSize = "25pt";
+    </script>
+    <div style="width:200px;height:270px;margin-left:50px;padding:20px;
+        text-align:center;border:1px solid#000;">
+        <p>전구 on/off</p>
+        <img id="myImage" src="../img/pic_bulboff.gif" style="width:100px"><br>
+        <button onclick="document.getElementById('myImage').src='../img/pic_bulbon.gif'">전원on</button>
+        <button onclick="document.getElementById('myImage').src='../img/pic_bulboff.gif'">전원off</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function () {
+            //         $('h1').hover(function () {
+            // 마우스 포인터가 선택영역에 들어갔을 경우
+            //             $(this).css('color', 'red');
+            //         }, function () {
+            //             //마우스 포인터가 선택 영역에서 나갔을 경우
+            //             $(this).css('color', 'black');
+            // });
+            //         });
+
+
+            $('h1').on({
+                "mousedown": function () {
+                    //마우스를 눌렀을 때
+                    $(this).css('color', 'red');
+                },
+                "mouseup": function () {
+                    //마우스를 눌렀다 떼었을 때
+                    $(this).css('color', 'black');
+                }
+            });
+            $('h2').on({
+                "mouseover": function () {
+                    //마우스 포인터가 선택 영역에 들었을 경우
+                    $(this).css('color', 'hotpink');
+                },
+                "mouseleave": function () {
+                    //마우스 포인터가 선택 영역에서 나갓을 경우
+                    $(this).css('color', 'black');
+                }
+            });
+
+        });
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <h1>test1</h1>
+    <h2>test2</h2>
+
+
+
+</body>
+
+</html>

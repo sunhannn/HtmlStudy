@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var a = prompt("1부터 9가지의 숫자를 입력하세요");
+      var str;
+      switch (Number(a)) {
+        case 1:
+        case 3:
+        case 6:
+        case 7:
+        case 8:
+          str = "은";
+          break;
+        case 2:
+        case 4:
+        case 5:
+        case 9:
+          str = "는";
+          break;
+      }
+
+      //   if (a %b 2 != 1){}
+      if (a > 9) {
+        document.write("잘못 입력했어요! 9이하로 오네가이시마스");
+        // else if(boolean(typeof(Number(a)))){}
+      } else if (typeof Number(a) == "Number") {
+        if (a % 2 != 0) {
+          document.write(a + str + " 홀수 <br>");
+        } else if (a % 2 == 0) {
+          document.write(a + str + " 짝수 <br>");
+        }
+      } else {
+        document.write("숫자가 아닌듯요");
+      }
+    </script>
+  </body>
+</html>

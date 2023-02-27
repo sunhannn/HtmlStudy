@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>bom04</title>
+</head>
+
+<body>
+    <button onclick="cfn()">cfn() 클릭</button><br>
+    <button onclick="vfn()">vfn() 클릭</button><br>
+    <script>
+        document.write("화면의 너비(width)는: " + screen.width);
+        document.write("<br>화면의 폭(height)은: " + screen.height);
+        document.write("<br>작업표시줄을 제외한 화면의 너비(width)는: " + screen.availWidth);
+        document.write("<br>작업표시줄을 제외한 화면의 폭(height)은: " + screen.availHeight);
+
+        function cfn() {
+            var pic = document.getElementById('demo');
+
+            pic.style.width = screen.availWidth + "px";
+            pic.style.height = screen.availHeight + "px";
+            pic.style.backgroundColor = "green";
+        }
+
+        function vfn() {
+            var pic = document.getElementById('demo');
+            // pic.style.width = "100vw";
+            // pic.style.height = "100vh";
+            pic.style.backgroundColor = "red";
+            alert(pic.offsetHeight+', '+pic.clientHeight);
+        }
+    </script>
+    <div id="demo">div박스</div>
+</body>
+
+</html>
