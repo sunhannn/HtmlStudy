@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery.js"></script>
+    <style>
+        span {
+            background-color: yellow;
+        }
+    </style>
+    <script>
+        $(function () {
+            var wSize = 100;
+            var hSize = 100;
+
+            $(document).on("wheel", function (event) {
+                var wheel = event.originalEvent.wheelDelta;
+
+
+
+                if (wheel < 0) {
+                    if (wSize <= 50); {
+                        wSize = wSize - 8;
+                        // hSize = hSize - 8;
+                    }
+                } else {
+                    if (wSize >= 500); {
+                        wSize = wSize + 8;
+                        // hSize = hSize + 8;
+                    }
+
+                }
+
+
+
+
+                $("img").css({ 'width': wSize + "px" });
+
+
+
+
+            });
+
+
+            $(document).on("mousedown", function (event) {
+
+                var mWhich = event.which;
+                if (mWhich = 2) {
+                    wSize = 100;
+
+
+                } else {
+                    return false;
+                }
+                $("img").css({ "width": wSize + "px" });
+
+            });
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <h1>마우스 휠 조작</h1>
+    <p>휠 위로: <span>확대</span>,휠 클릭 : <span>100%</span>, 휠 아래로: <span>축소</span></p>
+    <img src="../img/cute_dog.jpg" class="origin">
+</body>
+
+</html>

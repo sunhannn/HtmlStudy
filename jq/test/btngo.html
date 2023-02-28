@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery.js"></script>
+    <style>
+
+    </style>
+    <script>
+        $(function () {
+            var wSize = 100;
+            var hSize = 100;
+            $(".zBtn .btn").on("click", wInOut);
+            $(".zBtn .btn").on("click", hInOut);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            function wInOut() {
+                if ($(this).hasClass("zOut")) {
+                    if (wSize <= 50) return false;
+                    wSize = wSize - 10;
+                } else if ($(this).hasClass("zIn")) {
+                    if (wSize >= 500) return false;
+                    wSize = wSize + 10;
+
+                } else {
+                    wSize = 100;
+                }
+
+
+
+
+                $("img").css({ 'width': wSize + "px" });
+
+            }
+
+            function hInOut() {
+                if ($(this).hasClass("zOut")) {
+                    if (hSize <= 50) return false;
+                    hSize = hSize - 10;
+
+                } else if ($(this).hasClass("zIn")) {
+                    if (hSize >= 500) return false;
+                    hSize = hSize - 10;
+
+                } else {
+                    hSize = 100;
+                }
+
+
+
+
+                $("img").css({ 'height': hSize + "px" });
+
+            }
+
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <p class="zBtn">
+        <button class="btn zOut">-</button>
+        <button class="btn originBtn">100%</button>
+        <button class="btn zIn">+</button>
+
+    </p>
+    <img src="../img/cute_dog.jpg" class="origin">
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function () {
+            var fSize = 12;
+            $(".zBtn .btn").on("click", zInOut);
+
+
+            function zInOut() {
+                if ($(this).hasClass("zOut")) {
+                    if (fSize <= 8) return false;
+                    fSize--;
+                } else if ($(this).hasClass("zIn")) {
+                    if (fSize >= 50) return false;
+                    fSize++;
+                } else {
+                    fSize = 12;
+                }
+                $(".fontSize").text(fSize + "pt");
+
+                /*
+                 속성명 : 
+                객체로 사용시 -(대시) 제거 가멜기법으로 표기.
+                css속성명 그대로 사용하는 경우는 따옴표로 묶어줌.
+
+                */
+
+                $("body").css({ 'font-size': fSize + "pt" });
+                $("#rel_site, #rel_site option").css({ 'font-size': fSize + "pt" });
+                // $(".btn").css({'font-size':fSize + "pt"});
+                // $("body").css({'font-size':fSize + "pt"});
+
+
+            }
+
+
+        });
+
+
+
+    </script>
+</head>
+
+<body>
+    <p class="zBtn">
+        <button class="btn zOut">-</button>
+        <button class="btn originBtn">100%</button>
+        <button class="btn zIn">+</button>
+
+    </p>
+
+    <p class="fontSize">12pt</p>
+    <div id="wrap">
+        낙화 -이형기
+
+        가야 할 때가 언제인가를
+        분명히 알고 가는 이의
+        뒷모습은 얼마나 아름다운가.
+
+        봄 한 철
+        격정을 인내한
+        나의 사랑은 지고 있다.
+
+        분분한 낙화.
+        결별이 이룩하는 축복에 싸여
+        지금은 가야 할 때
+
+        무성한 녹음과 그리고
+        머지않아 열매 맺는
+        가을을 향하여
+        나의 청춘은 꽃답게 죽는다.
+
+        헤어지자
+        섬세한 손길을 흔들며
+        하롱하롱 꽃잎이 지는 어느 날
+
+        나의 사랑, 나의 결별
+        샘터에 물 고이듯 성숙하는
+        내 영혼의 슬픈 눈.
+
+
+    </div>
+    <select id="rel_site">
+
+        <option value="">사이트 선택</option>
+        <option value="www.google.com">구글</option>
+        <option value="www.naver.com">네이버</option>
+        <option value="www.daum.net">다음</option>
+    </select><br>
+
+
+
+</body>
+
+</html>
