@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <style>
+        div.menu {
+            float: left;
+            padding: 5px 10px;
+            border-left: 1px solid black;
+            border-top: 1px solid black;
+        }
+
+        div.menu:nth-child(3) {
+            border-right: 1px solid black;
+        }
+
+        #con {
+            clear: left;
+            border: 1px solid black;
+            height: 300px;
+        }
+    </style>
+    <script>
+        $(function () {
+            $(".conDiv").eq(0).show();
+            $(".conDiv").eq(0).siblings().hide();
+            $(".menu").eq(0).css({ "background-color": "yellow" });
+
+            $(".menu").click(function () {
+                $(this).css({ "background-color": "yellow" });
+                $(this).siblings.css({ "background-color": "white", "color": "black" });
+                $(".conDiv").eq($(".menu").index(this)).show();
+                $(".conDiv").eq($(".menu").index(this)).siblings().hide();
+
+
+            });
+
+
+        });
+
+
+
+    </script>
+</head>
+
+<body>
+    <div class="menu">메뉴1</div>
+    <div class="menu">메뉴2</div>
+    <div class="menu">메뉴3</div>
+    <div id="con">
+        <div class="conDiv">메뉴1 내용입니다.</div>
+        <div class="conDiv">메뉴2 내용입니다.</div>
+        <div class="conDiv">메뉴3 내용입니다.</div>
+    </div>
+
+
+
+</body>
+
+</html>
