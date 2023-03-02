@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        div {
+            border: 1px solid black;
+        }
+
+        .container-fluid {
+            margin-top: 50px;
+        }
+
+        .container-fluid,
+        .container {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 컨테이너는 내용물을 채워 넣는 데 사용되며 두 가지 컨테이너 클래스를 사용할 수 있다.
+.contatiner 클래스 : 고정 너비 컨테이너를 제공한다.
+.container-fluid 클래스 : 뷰포트의 전체 너비를 제공한다. -->
+    <div class="container">
+        <h1>.container</h1>
+        <p>이 부분은 .container가 적용되고 있는 부분이다.</p>
+        <p>.container는 가운데 정렬, 고정 가로폭을 제공한다.</p>
+    </div>
+
+    <!-- .container사이즈 : 100%매우 작은
+<576px	작은
+≥576px	중간
+≥768px	큰
+≥992px	초대형
+≥1200px
+최대 너비	100%	540픽셀	720픽셀	960픽셀	1140픽셀 -->
+    <div class="container-sm">.container-sm</div>
+    <div class="container-md mt-3">.container-md</div>
+    <div class="container-lg mt-3">.container-lg</div>
+    <div class="container-xl mt-3">.container-xl</div>
+    <div class="container-fluid">
+
+        <h1>이 부분은 .container-fluid가 적용되고 있는 부분이다.</h1>
+        <p>.container-fluid는 뷰포트의 전체 너비를 제공한다.</p>
+
+    </div>
+</body>
+
+</html>
