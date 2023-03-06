@@ -1,0 +1,28 @@
+input {
+  width: 460px !important;
+  height: 45px !important;
+  margin-top: 0;
+  text-align: center !important;
+  display: inline-block !important;
+}
+.container-fluid {
+  text-align: center !important;
+}
+h3 {
+  font-size: 14px !important;
+  font-weight: bold !important;
+}
+
+input:focus {
+  outline: 3px solid #00c85a !important;
+  border: 0;
+}
+select:focus {
+  outline: 3px solid #03c75a !important;
+  border: 0;
+}
+
+input.caca {
+  width: 145px !important;
+  height: 45px !important;
+}

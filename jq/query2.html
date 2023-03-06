@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <h2>querySelectorAll</h2>
+    <h2>querySelector() 함수</h2>
+    <pre style="border: 1px solid #000;">
+
+    형식 : document.querySelect("셀렉터명")</pre>
+    <p>제공한 선택자 또는 선택자 그룹과 일치하는 문서의 Element 배열을 반환한다. <br>
+        일치하는 요소가 없으면 빈 배열객체를 반환한다.</p>
+    <div class="outer">
+        <div class="slect">
+            <div class="inner">InnerDiv</div>
+        </div>
+        <div class="slect">
+            <div class="inner">InnerDiv</div>
+        </div>
+        <div class="slect">
+            <div class="inner">InnerDiv</div>
+        </div>
+        <script>
+
+            let a = document.querySelector('.select');
+            console.log('a: ', a);
+            let b = document.querySelector('.select > .inner');
+            console.log('b: ', a);
+            let c = document.querySelectorAll('.outer .inner');
+            console.log('c: ', a);
+            let d = document.querySelectorAll('.select');
+            console.log('d: ', a)
+            let e = document.querySelectorAll('#select');
+            console.log(e);
+            console.log('e : ', e);
+
+        </script>
+
+    </div>
+</body>
+
+</html>

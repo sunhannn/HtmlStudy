@@ -1,0 +1,47 @@
+body {
+  background-color: #f5f6f7;
+}
+div#cal {
+  text-align: center;
+}
+#inzung {
+  height: 45px;
+  width: 100px;
+}
+#gaip {
+  display: inline-block;
+  height: 45px;
+  width: 460px;
+}
+#ph {
+  height: 45px;
+  width: 360px;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+input {
+  background-color: white;
+  border: lightgray solid 1px;
+  height: 45px;
+  width: 460px;
+  font-size: 14px;
+}
+
+.year {
+  background-color: white;
+  border: lightgray solid 1px;
+  height: 45px;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+}
+select {
+  background-color: white;
+  border: lightgray solid 1px;
+  height: 45px;
+  width: 460px;
+}
+h3 {
+  font-size: 14px;
+}

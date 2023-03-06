@@ -3,3 +3,16 @@
   height: 250px;
   margin-left: 25px;
 }
+p {
+  text-align: center;
+  font-weight: bold;
+  color: azure;
+}
+.today {
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+body {
+  background-image: url("7-가로.jpg");
+}
